@@ -1,0 +1,14 @@
+{
+  "name": "swade-powers",
+  "version": "0.0.1",
+  "description": "React website for quick access to the list of powers in SWADE",
+  "main": "index.js",
+  "repository": "http",
+  "author": "Chip Long <chip_long@yahoo.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ]
+}
