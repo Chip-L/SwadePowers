@@ -1,3 +1,17 @@
 {
-  "cSpell.words": ["swade"]
+  "cSpell.words": ["swade"],
+  "cSpell.ignorePaths": [
+    "**/node_modules/**",
+    ".git",
+    "**/**.svg",
+    "**/*.dll",
+    ".eslintrc.cjs",
+    ".pretterignore",
+    ".prettierrc.json",
+    "dist",
+    "vscode/**",
+    "coverage/**",
+    "tsconfig.*",
+    "vitest.*"
+  ]
 }

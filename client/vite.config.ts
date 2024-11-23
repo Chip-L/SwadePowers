@@ -1,40 +1,14 @@
-import { defineConfig } from 'vite'
-import fs from 'fs/promises';
+import { defineConfig } from "vitest/config";
+import react from "@vitejs/plugin-react";
+import tsconfigPaths from "vite-tsconfig-paths";
 
-/*
-  This override allows us to use .js files instead of exclusively .jsx.
-  We should remove as soon as video updates can be prioritized.
-*/
-export default defineConfig(() => ({
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react(), tsconfigPaths()],
+  server: { open: true },
   test: {
     globals: true,
-    environment: 'happy-dom',
+    environment: "jsdom",
+    setupFiles: "./vitest.setup.ts",
   },
-  server: {
-    host: 'localhost',
-    port: 3000
-  },
-  esbuild: {
-    loader: "tsx",
-    include: /src\/.*\.[tj]sx?$/,
-    exclude: [],
-  },
-  optimizeDeps: {
-    esbuildOptions: {
-      loader: {
-        '.js': 'jsx',
-      },
-      plugins: [
-        {
-          name: "load-js-files-as-jsx",
-          setup(build) {
-            build.onLoad({ filter: /src\/.*\.js$/ }, async (args) => ({
-              loader: "jsx",
-              contents: await fs.readFile(args.path, "utf8"),
-            }));
-          },
-        },
-      ],
-    },
-  },
-}));
+});
