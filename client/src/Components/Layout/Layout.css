@@ -1,0 +1,30 @@
+body,
+html,
+#root {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Helvetica;
+  font-size: 16px;
+
+  background-image: url('./parchment_texture_1_by_mytherea.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.App {
+  height: 100%;
+  padding: 0 17% 10% 17%;
+
+  /*
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  color: #fff;
+  */
+}

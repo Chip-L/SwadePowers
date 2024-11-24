@@ -1,5 +1,7 @@
+import { Layout } from "Components/Layout";
+
 function App() {
-  return <>Swade</>;
+  return <Layout />;
 }
 
 export default App;
