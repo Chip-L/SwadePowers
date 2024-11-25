@@ -1,5 +1,15 @@
 {
-  "cSpell.words": ["swade"],
+  "cSpell.words": [
+    "Darksight",
+    "Farsight",
+    "hippogriffs",
+    "nanites",
+    "psionic",
+    "psionics",
+    "psykers",
+    "soulsight",
+    "swade"
+  ],
   "cSpell.ignorePaths": [
     "**/node_modules/**",
     ".git",
@@ -12,6 +22,8 @@
     "vscode/**",
     "coverage/**",
     "tsconfig.*",
-    "vitest.*"
+    "vitest.*",
+    "**/package.json",
+    "**/package-lock.json"
   ]
 }
