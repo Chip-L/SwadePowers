@@ -5,6 +5,11 @@ const config: CodegenConfig = {
   generates: {
     "./src/types/__generated__.ts": {
       plugins: ["typescript", "typescript-resolvers"],
+      config: {
+        mappers: {
+          Power: "./PowerModel#PowerModel",
+        },
+      },
     },
   },
 };

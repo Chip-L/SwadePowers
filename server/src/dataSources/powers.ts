@@ -1,6 +1,6 @@
-import { Power, Rank } from "../types";
+import { PowerModel, Rank } from "../types";
 
-export const powers: Power[] = [
+export const powersDS: PowerModel[] = [
   {
     id: "1",
     name: "Arcane Protection",

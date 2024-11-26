@@ -21,7 +21,7 @@ type Power {
   trappings: [String]
   fullDescription: String
   pageNum: Int
-  powerModifiers: [ID]
+  powerModifiers: [PowerModifier]
 }
 
 type PowerModifier {
@@ -33,10 +33,10 @@ type PowerModifier {
   takeMultiple: Boolean
   # isRequired can take the place of the powerPoints==="special" in a Power
   isRequired: Boolean
-  source: Source
+  # source: Source
 }
 
 type Query {
   getPowers: [Power!]!
-  getPower(power_id: ID!): Power
+  getPower(id: ID!): Power
 }

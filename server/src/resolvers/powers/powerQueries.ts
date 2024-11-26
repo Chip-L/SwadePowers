@@ -1,8 +1,11 @@
-import { powers } from "../../dataSources/powers";
+import { powersDS } from "../../dataSources";
 import { QueryResolvers } from "../../types";
 
 export const powerQuery: QueryResolvers = {
   getPowers: () => {
-    return powers;
+    return powersDS;
+  },
+  getPower: (_, { id }) => {
+    return powersDS.find((power) => power.id === id);
   },
 };

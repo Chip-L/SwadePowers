@@ -1,4 +1,5 @@
 import { GraphQLResolveInfo } from 'graphql';
+import { PowerModel } from './PowerModel';
 export type Maybe<T> = T | null;
 export type InputMaybe<T> = Maybe<T>;
 export type Exact<T extends { [key: string]: unknown }> = { [K in keyof T]: T[K] };
@@ -36,7 +37,7 @@ export type Power = {
   id: Scalars['ID']['output'];
   name: Scalars['String']['output'];
   pageNum?: Maybe<Scalars['Int']['output']>;
-  powerModifiers?: Maybe<Array<Maybe<Scalars['ID']['output']>>>;
+  powerModifiers?: Maybe<Array<Maybe<PowerModifier>>>;
   powerPoints?: Maybe<Scalars['String']['output']>;
   range?: Maybe<Scalars['String']['output']>;
   rangeMultiplier?: Maybe<Scalars['Int']['output']>;
@@ -54,7 +55,6 @@ export type PowerModifier = {
   isRequired?: Maybe<Scalars['Boolean']['output']>;
   name: Scalars['String']['output'];
   shortModifierName?: Maybe<Scalars['String']['output']>;
-  source?: Maybe<Source>;
   takeMultiple?: Maybe<Scalars['Boolean']['output']>;
 };
 
@@ -66,7 +66,7 @@ export type Query = {
 
 
 export type QueryGetPowerArgs = {
-  power_id: Scalars['ID']['input'];
+  id: Scalars['ID']['input'];
 };
 
 export enum Rank {
@@ -159,7 +159,7 @@ export type ResolversTypes = {
   Boolean: ResolverTypeWrapper<Scalars['Boolean']['output']>;
   ID: ResolverTypeWrapper<Scalars['ID']['output']>;
   Int: ResolverTypeWrapper<Scalars['Int']['output']>;
-  Power: ResolverTypeWrapper<Power>;
+  Power: ResolverTypeWrapper<PowerModel>;
   PowerModifier: ResolverTypeWrapper<PowerModifier>;
   Query: ResolverTypeWrapper<{}>;
   Rank: Rank;
@@ -173,7 +173,7 @@ export type ResolversParentTypes = {
   Boolean: Scalars['Boolean']['output'];
   ID: Scalars['ID']['output'];
   Int: Scalars['Int']['output'];
-  Power: Power;
+  Power: PowerModel;
   PowerModifier: PowerModifier;
   Query: {};
   Source: Source;
@@ -199,7 +199,7 @@ export type PowerResolvers<ContextType = any, ParentType extends ResolversParent
   id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
   name?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   pageNum?: Resolver<Maybe<ResolversTypes['Int']>, ParentType, ContextType>;
-  powerModifiers?: Resolver<Maybe<Array<Maybe<ResolversTypes['ID']>>>, ParentType, ContextType>;
+  powerModifiers?: Resolver<Maybe<Array<Maybe<ResolversTypes['PowerModifier']>>>, ParentType, ContextType>;
   powerPoints?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   range?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   rangeMultiplier?: Resolver<Maybe<ResolversTypes['Int']>, ParentType, ContextType>;
@@ -217,13 +217,12 @@ export type PowerModifierResolvers<ContextType = any, ParentType extends Resolve
   isRequired?: Resolver<Maybe<ResolversTypes['Boolean']>, ParentType, ContextType>;
   name?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   shortModifierName?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
-  source?: Resolver<Maybe<ResolversTypes['Source']>, ParentType, ContextType>;
   takeMultiple?: Resolver<Maybe<ResolversTypes['Boolean']>, ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
 export type QueryResolvers<ContextType = any, ParentType extends ResolversParentTypes['Query'] = ResolversParentTypes['Query']> = {
-  getPower?: Resolver<Maybe<ResolversTypes['Power']>, ParentType, ContextType, RequireFields<QueryGetPowerArgs, 'power_id'>>;
+  getPower?: Resolver<Maybe<ResolversTypes['Power']>, ParentType, ContextType, RequireFields<QueryGetPowerArgs, 'id'>>;
   getPowers?: Resolver<Array<ResolversTypes['Power']>, ParentType, ContextType>;
 };
 

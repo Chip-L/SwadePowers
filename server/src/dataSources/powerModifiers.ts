@@ -1,6 +1,6 @@
 import { PowerModifier } from "../types";
 
-export const powerModifiers: PowerModifier[] = [
+export const powerModifiersDS: PowerModifier[] = [
   {
     description:
       "The power may affect more than one item for 1 additional Power Point each.",
