@@ -50,9 +50,9 @@ export type PowerModifier = {
   __typename?: 'PowerModifier';
   cost?: Maybe<Scalars['String']['output']>;
   description?: Maybe<Scalars['String']['output']>;
+  id: Scalars['ID']['output'];
   isRequired?: Maybe<Scalars['Boolean']['output']>;
-  modifierName: Scalars['String']['output'];
-  modifier_id: Scalars['ID']['output'];
+  name: Scalars['String']['output'];
   shortModifierName?: Maybe<Scalars['String']['output']>;
   source?: Maybe<Source>;
   takeMultiple?: Maybe<Scalars['Boolean']['output']>;
@@ -213,9 +213,9 @@ export type PowerResolvers<ContextType = any, ParentType extends ResolversParent
 export type PowerModifierResolvers<ContextType = any, ParentType extends ResolversParentTypes['PowerModifier'] = ResolversParentTypes['PowerModifier']> = {
   cost?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   description?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
   isRequired?: Resolver<Maybe<ResolversTypes['Boolean']>, ParentType, ContextType>;
-  modifierName?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
-  modifier_id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
+  name?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   shortModifierName?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   source?: Resolver<Maybe<ResolversTypes['Source']>, ParentType, ContextType>;
   takeMultiple?: Resolver<Maybe<ResolversTypes['Boolean']>, ParentType, ContextType>;
