@@ -28,6 +28,7 @@
     "paths": {
       "@components/*": ["components/*"],
       "@hooks/*": ["hooks/*"],
+      "@pages/*": ["pages/*"],
       "@utils/*": ["utils/*"]
     }
   },

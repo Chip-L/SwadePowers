@@ -1,17 +1,10 @@
-import React from 'react';
-import './SearchBar.css';
+import "./SearchBar.css";
 
-export class SearchBar extends React.Component {
-/*  constructor() {
-
-} */
-
-  render() {
-    return (
-      <div className="SearchBar">
-        <input placeholder="Enter a Power" />
-        <button className="SearchButton">SEARCH</button>
-      </div>
-    )
-  }
-}
+export const SearchBar = () => {
+  return (
+    <div className="SearchBar">
+      <input placeholder="Enter a Power" />
+      <button className="SearchButton">SEARCH</button>
+    </div>
+  );
+};

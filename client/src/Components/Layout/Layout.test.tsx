@@ -1,9 +1,13 @@
+import * as Header from "Components/Header";
+import { render, screen } from "@testing-library/react";
 import Layout from "./Layout";
 
-/*
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+vi.spyOn(Header, "Header").mockImplementation(() => <div>Header</div>);
+
+describe("Layout", () => {
+  it("renders the header and body", () => {
+    render(<Layout />);
+    expect(screen.getByText("Header")).toBeInTheDocument();
+    expect(screen.getByPlaceholderText("Enter a Power")).toBeInTheDocument();
+  });
 });
-*/

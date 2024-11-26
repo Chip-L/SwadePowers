@@ -1,12 +1,12 @@
 import { Header } from "Components/Header";
-import { SearchBar } from "Components/SearchBar";
+import Powers from "Pages/Powers";
 import "./Layout.css";
 
 function Layout() {
   return (
     <div>
       <Header />
-      <SearchBar />
+      <Powers />
     </div>
   );
 }
