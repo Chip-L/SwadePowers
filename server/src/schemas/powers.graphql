@@ -1,0 +1,42 @@
+enum Rank {
+  NOVICE
+  SEASONED
+  VETERAN
+  HEROIC
+  LEGENDARY
+}
+
+type Power {
+  power_id: ID!
+  power: String!
+  alternateName: String
+  relatedPower: [ID]
+  rank: Rank
+  powerPoints: String
+  range: String
+  rangeMultiplier: String
+  duration: String
+  durationMultiplier: Int
+  summary: String
+  trappings: [String]
+  fullDescription: String
+  source: Source
+  powerModifiers: [PowerModifier]
+}
+
+type PowerModifier {
+  modifier_id: ID!
+  modifierName: String!
+  description: String
+  shortModifierName: String
+  cost: String
+  takeMultiple: Boolean
+  # isRequired can take the place of the powerPoints==="special" in a Power
+  isRequired: Boolean
+  source: Source
+}
+
+type Query {
+  getPowers: [Power!]!
+  getPower(power_id: ID!): Power
+}
