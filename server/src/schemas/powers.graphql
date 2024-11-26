@@ -7,21 +7,21 @@ enum Rank {
 }
 
 type Power {
-  power_id: ID!
-  power: String!
+  id: ID!
+  name: String!
   alternateName: String
-  relatedPower: [ID]
+  relatedPowers: [ID]
   rank: Rank
   powerPoints: String
   range: String
-  rangeMultiplier: String
+  rangeMultiplier: Int
   duration: String
   durationMultiplier: Int
   summary: String
   trappings: [String]
   fullDescription: String
-  source: Source
-  powerModifiers: [PowerModifier]
+  pageNum: Int
+  powerModifiers: [ID]
 }
 
 type PowerModifier {
