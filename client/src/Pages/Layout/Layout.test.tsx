@@ -1,6 +1,6 @@
 import * as Header from "Components/Header";
-import * as Powers from "Pages/Powers";
 import { render, screen } from "@testing-library/react";
+import * as Powers from "../PowersLookup";
 import Layout from "./Layout";
 
 vi.spyOn(Header, "Header").mockImplementation(() => <div>Header</div>);

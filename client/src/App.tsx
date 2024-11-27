@@ -1,4 +1,4 @@
-import { Layout } from "Components/Layout";
+import { Layout } from "@/Pages/Layout";
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 
 const client = new ApolloClient({

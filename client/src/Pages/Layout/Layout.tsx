@@ -1,12 +1,12 @@
-import { Header } from "Components/Header";
-import Powers from "Pages/Powers";
+import { Header } from "@/Components/Header";
+import PowersLookup from "../PowersLookup";
 import "./Layout.css";
 
 function Layout() {
   return (
     <div>
       <Header />
-      <Powers />
+      <PowersLookup />
     </div>
   );
 }
