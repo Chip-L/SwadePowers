@@ -1,10 +1,43 @@
 import "./SearchBar.css";
 
-export const SearchBar = () => {
+type Option = {
+  id: string;
+  name: string;
+};
+
+interface SearchBarProps {
+  defaultValue: string;
+  value: string;
+  optionList: Option[];
+  onSelect: (id: string) => void;
+}
+
+export const SearchBar = ({
+  defaultValue,
+  value = "",
+  optionList,
+  onSelect,
+}: SearchBarProps) => {
+  const handleSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    onSelect(e.target.value);
+  };
+
   return (
     <div className="SearchBar">
-      <input placeholder="Enter a Power" />
-      <button className="SearchButton">SEARCH</button>
+      <select
+        onChange={handleSelect}
+        value={value}
+      >
+        <option value="">{defaultValue}</option>
+        {optionList.map((option) => (
+          <option
+            key={option.id}
+            value={option.id}
+          >
+            {option.name}
+          </option>
+        ))}
+      </select>
     </div>
   );
 };
