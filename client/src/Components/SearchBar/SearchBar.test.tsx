@@ -54,8 +54,8 @@ describe("SearchBar", () => {
     const option = screen.getByRole("option", {
       name: "Power 1",
     }) as HTMLOptionElement;
-
     await user.selectOptions(selectBox, option);
+
     expect(onSelectSpy).toHaveBeenCalledWith("1");
   });
 
