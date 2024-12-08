@@ -3,11 +3,16 @@ import { GET_POWER_LIST } from "@/APIs";
 import LoadingSpinner from "@/Components/LoadingSpinner";
 import { SearchBar } from "@/Components/SearchBar";
 import { POWERS_LOOKUP_DEFAULT_SEARCH, POWERS_LOOKUP_TITLE } from "@/constants";
+import PowerCard from "@/containers/PowerCard";
+import { Power } from "@/types";
 import { useQuery } from "@apollo/client";
 
 const PowersLookup = () => {
-  const [selectedPower, setSelectedPower] = useState<string>("");
+  const [selectedPowerId, setSelectedPowerId] = useState<string>("");
   const { data, loading } = useQuery(GET_POWER_LIST);
+  const selectedPower: Power | undefined = data?.getPowers.find(
+    (power) => power.id === selectedPowerId,
+  );
 
   return (
     <>
@@ -15,12 +20,15 @@ const PowersLookup = () => {
       {loading ? (
         <LoadingSpinner />
       ) : (
-        <SearchBar
-          defaultValue={POWERS_LOOKUP_DEFAULT_SEARCH}
-          value={selectedPower}
-          optionList={data?.getPowers ?? []}
-          onSelect={setSelectedPower}
-        />
+        <>
+          <SearchBar
+            defaultValue={POWERS_LOOKUP_DEFAULT_SEARCH}
+            value={selectedPowerId}
+            optionList={data?.getPowers ?? []}
+            onSelect={setSelectedPowerId}
+          />
+          {selectedPower && <PowerCard selectedPower={selectedPower} />}
+        </>
       )}
     </>
   );
