@@ -6,7 +6,7 @@ header {
   justify-content: center;
   margin: 0;
 
-  font-family: 'Condiment', cursive;
+  font-family: "Condiment", cursive;
 }
 
 .header-content {
@@ -32,7 +32,7 @@ h1 {
 
 h2 {
   font-size: 1em;
-  padding-top: .25em;
+  padding-top: 0.25em;
   margin: 0;
   display: none;
 }
@@ -40,7 +40,7 @@ h2 {
 @media only screen and (min-width: 600px) {
   header {
     height: 6em;
-    padding: .25em;
+    padding: 0.25em;
   }
 
   img {

@@ -14,6 +14,26 @@ export default ({ mode }: { mode: string }) => {
       globals: true,
       environment: "jsdom",
       setupFiles: "./vitest.setup.ts",
+      coverage: {
+        provider: "istanbul",
+        reporter: ["text", "json", "html"],
+        thresholds: {
+          lines: 85,
+          branches: 70,
+          functions: 70,
+          statements: 85,
+        },
+        include: ["src/**"],
+        exclude: [
+          "src/main.tsx",
+          "src/App.tsx",
+          "src/api/**",
+          "src/routes.tsx",
+          "src/util/apolloClient.ts",
+          "src/__generated__/**",
+          "src/util/helpers/text/calculateTextWidth.ts",
+        ],
+      },
     },
   });
 };

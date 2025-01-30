@@ -1,4 +1,4 @@
-import { Scalars, Rank } from ".";
+import { Rank, Scalars } from ".";
 
 type Id = Scalars["ID"]["output"];
 
