@@ -12,7 +12,7 @@ html {
   font-family: Helvetica;
   font-size: 16px;
 
-  background-image: url('./parchment_texture_1_by_mytherea.jpg');
+  background-image: url("./parchment_texture_1_by_mytherea.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

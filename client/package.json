@@ -9,7 +9,11 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest",
-    "generate": "graphql-codegen"
+    "generate": "graphql-codegen",
+    "stage": "yarn check-format && yarn lint && yarn build && yarn coverage",
+    "coverage": "vitest run --coverage",
+    "format": "prettier --write .",
+    "check-format": "prettier --check ."
   },
   "dependencies": {
     "@apollo/client": "^3.12.8",
