@@ -23,14 +23,16 @@ Dependencies are locked with a `yarn.lock` file, so please use `yarn` instead of
 
 This uses yarn workspaces, so running the code in the root will run these commands for both the client and server.
 
-- `yarn dev` runs the code in developer mode
-- `yarn test` runs the test cases (in watch-mode by default)
-- `yarn generate` creates an updated types via CodeGen for the GraphQL artifacts
+- `yarn dev` runs the code in developer mode (root launches new windows for this)
+- `yarn test` runs the test cases (in watch-mode by default) (root launches new windows for this)
 - `yarn build` builds the code for distribution
-- `yarn prod` runs the code in production mode
 - `yarn coverage` runs the tests and displays the coverage of the test cases
 - `yarn lint` runs the linter
 - `yarn stage` runs the linter, does the build, and runs the tests
+
+These are only run in each workspace:
+
+- `yarn generate` creates an updated types via CodeGen for the GraphQL artifacts
 
 ## Technologies
 

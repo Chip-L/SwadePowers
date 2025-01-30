@@ -1,5 +1,5 @@
-import gql from "graphql-tag";
 import { readFileSync } from "fs";
+import gql from "graphql-tag";
 import path from "path";
 
 const powers = readFileSync(path.resolve(__dirname, "./powers.graphql"), {
