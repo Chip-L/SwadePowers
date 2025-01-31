@@ -1,7 +1,7 @@
 import { powersDS } from "../../dataSources";
 import { QueryResolvers } from "../../types";
 
-export const powerQuery: QueryResolvers = {
+export const query: QueryResolvers = {
   getPowers: () => {
     return powersDS;
   },
