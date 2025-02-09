@@ -20,7 +20,7 @@ export default [
   {
     ignores: [
       "src/types/__generated__.ts",
-      "**/.eslintrc.cjs",
+      "**/eslint.config.mjs",
       "**/codegen.ts",
       "**/vitest.config.ts",
     ],
