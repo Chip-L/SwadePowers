@@ -1,0 +1,198 @@
+import { PowerModifier } from "../../types";
+
+export const powerModifiersDS: PowerModifier[] = [
+  {
+    description: "Size +3 to +4",
+    shortModifierName: "Shape Change-Heroic",
+    cost: "1",
+    takeMultiple: false,
+    isRequired: true,
+    id: "50",
+    name: "Shape Change-Heroic (+11)",
+  },
+  {
+    description: "Size +5 to +10",
+    shortModifierName: "Shape Change-Legendary",
+    cost: "1",
+    takeMultiple: false,
+    isRequired: true,
+    id: "51",
+    name: "Shape Change-Legendary (+15)",
+  },
+  {
+    description:
+      "The <i>barrier</i> forms a circle, square or other basic shape.",
+    shortModifierName: "Shaped",
+    cost: "2",
+    takeMultiple: false,
+    isRequired: false,
+    id: "52",
+    name: "Shaped (+2)",
+  },
+  {
+    description: "The length and height of the <i>barrier</i> doubles.",
+    shortModifierName: "Size",
+    cost: "1",
+    takeMultiple: false,
+    isRequired: false,
+    id: "53",
+    name: "Size (+1)",
+  },
+  {
+    description:
+      "The recipient may assume the shape of someone up to two Sizes larger or smaller than themselves.",
+    shortModifierName: "Size",
+    cost: "1",
+    takeMultiple: false,
+    isRequired: false,
+    id: "54",
+    name: "Size (+1)",
+  },
+  {
+    description:
+      "The power generates sound appropriate to the <i>illusion</i>. Illusionary allies may talk, illusionary crows caw, and so on. It may not mask or mute existing sound, however.",
+    shortModifierName: "Sound",
+    cost: "1",
+    takeMultiple: false,
+    isRequired: false,
+    id: "55",
+    name: "Sound (+1)",
+  },
+  {
+    description:
+      "The recipient retains the power of speech (but still cannot activate powers).",
+    shortModifierName: "Speech",
+    cost: "1",
+    takeMultiple: false,
+    isRequired: false,
+    id: "56",
+    name: "Speech (+1)",
+  },
+  {
+    description:
+      "<i>Detection</i> rolls to see through the <i>concealment</i> are made at -2.",
+    shortModifierName: "Strong",
+    cost: "1",
+    takeMultiple: false,
+    isRequired: false,
+    id: "57",
+    name: "Strong (+1)",
+  },
+  {
+    description: "Strength rolls are made at -2.",
+    shortModifierName: "Strong",
+    cost: "1",
+    takeMultiple: false,
+    isRequired: false,
+    id: "58",
+    name: "Strong (+1)",
+  },
+  {
+    description: "The Spirit roll to shake off the effect is made at -2.",
+    shortModifierName: "Strong",
+    cost: "1",
+    takeMultiple: false,
+    isRequired: false,
+    id: "59",
+    name: "Strong (+1)",
+  },
+  {
+    description: "The Vigor roll to shake off the effect is made at -2.",
+    shortModifierName: "Strong",
+    cost: "1",
+    takeMultiple: false,
+    isRequired: false,
+    id: "60",
+    name: "Strong (+1)",
+  },
+  {
+    description:
+      "Smarts rolls to disbelieve the <i>illusion</i> are made at -2.",
+    shortModifierName: "Strong",
+    cost: "2",
+    takeMultiple: false,
+    isRequired: false,
+    id: "61",
+    name: "Strong (+2)",
+  },
+  {
+    description:
+      "The <i>entangling</i> material is particularly resilient. Rolls to break free are made at -2 and its Hardness increases to 7.",
+    shortModifierName: "Strong",
+    cost: "2",
+    takeMultiple: false,
+    isRequired: false,
+    id: "62",
+    name: "Strong (+2)",
+  },
+  {
+    description:
+      "<i><strong>Attendant</strong></i><br><strong>Attributes:</strong> Agility d4, Smarts d4, Spirit d4, Strength d4, Vigor d4<br><strong>Skills:</strong> Athletics d4, Fighting d4, Notice d4, Shooting d4, Stealth d6<br><strong>Pace:</strong> 4; <strong>Parry:</strong> 4; <strong>Toughness: </strong>4<br><strong>Special Abilities:</strong><br><ul><li><strong>Claw: </strong>Str+d4.</li><li><strong>Construct:</strong> +2 to recover from being Shaken; ignore 1 point of Wound penalties; doesn't breathe, immune to poison and disease.</li><li><strong>Fearless:</strong> Immune to fear and Intimidation.</li></ul>",
+    shortModifierName: "Summon Ally-Novice",
+    cost: "2",
+    takeMultiple: false,
+    isRequired: true,
+    id: "63",
+    name: "Summon Ally-Novice (+2)",
+  },
+  {
+    description:
+      "<i><strong>Bodyguard</strong></i><br><strong>Attributes: </strong>Agility d6, Smarts d4, Spirit d6, Strength d6, Vigor d6<br><strong>Skills: </strong>Athletics d6, Fighting d6, Intimidation d6, Notice d4, Shooting d4, Stealth d4<br><strong>Pace: </strong>6; <strong>Parry: </strong>5; <strong>Toughness:</strong> 7 (2)<br><strong>Edges: </strong>First Strike<br><strong>Gear: </strong>Melee attack (Str+d6).<br><strong>Special Abilities:</strong><br><ul><li><strong>Armor +2: </strong>Hardened skin. </li><li><strong>Construct: </strong>+2 to recover from being Shaken; ignore 1 point of Wound penalties; doesn't breathe, immune to poison and disease. </li><li><strong>Fearless:</strong> Immune to fear and Intimidation. </li></ul>",
+    shortModifierName: "Summon Ally-Seasoned",
+    cost: "4",
+    takeMultiple: false,
+    isRequired: true,
+    id: "64",
+    name: "Summon Ally-Seasoned (+4)",
+  },
+  {
+    description:
+      "<i><strong>Mirror Self<br></strong></i>The ally is a clone of the caster except: it's an Extra; it has the same number of current Power Points as the caster <i>after</i> subtracting for this casting; it cannot use the summon ally power; its skills (but not attributes) are one die type less (minimum d4) than the original; it has identical mundane equipment (no magical qualities, disappears when the power expires); has the Construct and Fearless abilities.<br><i>Mirror Self costs +2 power points per Rank above Veteran to a maximum of 10 PPs at Legendary.</i>",
+    shortModifierName: "Summon Ally-Veteran",
+    cost: "6",
+    takeMultiple: false,
+    isRequired: true,
+    id: "65",
+    name: "Summon Ally-Veteran (+6)",
+  },
+  {
+    description:
+      "<i><strong>Sentinel</strong></i><br><strong>Attributes: </strong>Agility d6, Smarts d6, Spirit d8, Strength d12+2, Vigor d10<br><strong>Skills: </strong>Athletics d6, Fighting d10, Intimidation d10, Notice d8<br><strong>Pace: </strong>6; <strong>Parry: </strong>7; <strong>Toughness: </strong>13 (4)<br><strong>Edges: </strong>Arcane Resistance, Sweep (Imp).<br><strong>Gear: </strong>Melee attack (Str+d8).<br><strong>Special Abilities:<br><ul><li></strong>' <strong>Armor +4: </strong>Stone skin.</li><li><strong>Construct: </strong>+2 to recover from being Shaken; ignore 1 point of Wound penalties; doesn't breathe, immune to poison and disease. </li><li><strong>Fearless: </strong>Immune to fear and Intimidation. </li><li><strong>Size 2: </strong>Sentinels are 8' tall and very dense. </li></ul>",
+    shortModifierName: "Summon Ally-Heroic",
+    cost: "8",
+    takeMultiple: false,
+    isRequired: true,
+    id: "66",
+    name: "Summon Ally-Heroic (+8)",
+  },
+  {
+    description:
+      "Instead of casting <i>silence</i> in an area of effect, the caster may instead target individuals in Range for 1 Power Point each. Unwilling targets resist with Spirit (at -2 if the caster gets a raise).",
+    shortModifierName: "Targeted",
+    cost: "0",
+    takeMultiple: false,
+    isRequired: false,
+    id: "67",
+    name: "Targeted (+0)",
+  },
+  {
+    description:
+      "Foes may be targeted by a <strong>Touch </strong>attack (page 108). This is an action, so the casting must be the second part of a Multi-Action if the attack is successful. The foe resists the casting with an opposed Spirit roll against the arcane skill total and is sent up to 12&quot; away with success and 24&quot; with a raise. Foes may not be teleported into solid objects.",
+    shortModifierName: "Teleport Foe",
+    cost: "2",
+    takeMultiple: false,
+    isRequired: false,
+    id: "68",
+    name: "Teleport Foe (+2)",
+  },
+  {
+    description:
+      "<i>Protection</i> provides Toughness instead of Armor and is not affected by AP (magical or otherwise). This means it stacks with natural or worn armor.",
+    shortModifierName: "Toughness",
+    cost: "2",
+    takeMultiple: false,
+    isRequired: false,
+    id: "69",
+    name: "Toughness (+2)",
+  },
+];
