@@ -1,4 +1,4 @@
-import { PowerModel, Rank } from "../types";
+import { PowerModel, Rank } from "../../types";
 
 export const powersDS: PowerModel[] = [
   {

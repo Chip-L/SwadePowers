@@ -1,10 +1,16 @@
-import { powerModifiersDS } from "../../dataSources";
-import { PowerResolvers } from "../../types";
+import { PowerModifier, PowerResolvers } from "../../types";
 
 export const power: PowerResolvers = {
-  powerModifiers: ({ powerModifiers }) => {
-    // const { powerModifiers } = parent;
+  powerModifiers: async (parent, _, { dataSources }) => {
+    console.log("powerModifiers", { parent });
 
-    return powerModifiersDS.filter((pm) => powerModifiers.includes(pm.id));
+    const powerModifiersArr: PowerModifier[] = [];
+    for (const id of parent.powerModifiers) {
+      powerModifiersArr.push(
+        await dataSources.powerModifiersAPI.getPowerModifierById(id),
+      );
+    }
+
+    return powerModifiersArr;
   },
 };

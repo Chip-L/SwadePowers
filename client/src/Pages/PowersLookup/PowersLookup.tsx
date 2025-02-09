@@ -27,7 +27,20 @@ const PowersLookup = () => {
             optionList={data?.getPowers ?? []}
             onSelect={setSelectedPowerId}
           />
-          {selectedPower && <PowerCard selectedPower={selectedPower} />}
+          {selectedPower && (
+            <>
+              <PowerCard selectedPower={selectedPower} />
+              <ul>
+                {selectedPower.powerModifiers &&
+                  selectedPower.powerModifiers.map(
+                    (powerModifier) =>
+                      powerModifier && (
+                        <li key={powerModifier.id}>{powerModifier.name}</li>
+                      ),
+                  )}
+              </ul>
+            </>
+          )}
         </>
       )}
     </>

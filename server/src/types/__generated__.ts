@@ -1,5 +1,6 @@
 import { GraphQLResolveInfo } from 'graphql';
 import { PowerModel } from './PowerModel';
+import { Context } from './context';
 export type Maybe<T> = T | null;
 export type InputMaybe<T> = Maybe<T>;
 export type Exact<T extends { [key: string]: unknown }> = { [K in keyof T]: T[K] };
@@ -192,7 +193,7 @@ export type ResolversParentTypes = {
   String: Scalars['String']['output'];
 };
 
-export type BookResolvers<ContextType = any, ParentType extends ResolversParentTypes['Book'] = ResolversParentTypes['Book']> = {
+export type BookResolvers<ContextType = Context, ParentType extends ResolversParentTypes['Book'] = ResolversParentTypes['Book']> = {
   author?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   book?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   book_id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
@@ -203,14 +204,14 @@ export type BookResolvers<ContextType = any, ParentType extends ResolversParentT
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
-export type MutationResponseResolvers<ContextType = any, ParentType extends ResolversParentTypes['MutationResponse'] = ResolversParentTypes['MutationResponse']> = {
+export type MutationResponseResolvers<ContextType = Context, ParentType extends ResolversParentTypes['MutationResponse'] = ResolversParentTypes['MutationResponse']> = {
   __resolveType: TypeResolveFn<null, ParentType, ContextType>;
   code?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   message?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   success?: Resolver<ResolversTypes['Boolean'], ParentType, ContextType>;
 };
 
-export type PowerResolvers<ContextType = any, ParentType extends ResolversParentTypes['Power'] = ResolversParentTypes['Power']> = {
+export type PowerResolvers<ContextType = Context, ParentType extends ResolversParentTypes['Power'] = ResolversParentTypes['Power']> = {
   alternateName?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   duration?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   durationMultiplier?: Resolver<Maybe<ResolversTypes['Int']>, ParentType, ContextType>;
@@ -229,7 +230,7 @@ export type PowerResolvers<ContextType = any, ParentType extends ResolversParent
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
-export type PowerModifierResolvers<ContextType = any, ParentType extends ResolversParentTypes['PowerModifier'] = ResolversParentTypes['PowerModifier']> = {
+export type PowerModifierResolvers<ContextType = Context, ParentType extends ResolversParentTypes['PowerModifier'] = ResolversParentTypes['PowerModifier']> = {
   cost?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   description?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
@@ -240,19 +241,19 @@ export type PowerModifierResolvers<ContextType = any, ParentType extends Resolve
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
-export type QueryResolvers<ContextType = any, ParentType extends ResolversParentTypes['Query'] = ResolversParentTypes['Query']> = {
+export type QueryResolvers<ContextType = Context, ParentType extends ResolversParentTypes['Query'] = ResolversParentTypes['Query']> = {
   getPower?: Resolver<Maybe<ResolversTypes['Power']>, ParentType, ContextType, RequireFields<QueryGetPowerArgs, 'id'>>;
   getPowers?: Resolver<Array<ResolversTypes['Power']>, ParentType, ContextType>;
 };
 
-export type SourceResolvers<ContextType = any, ParentType extends ResolversParentTypes['Source'] = ResolversParentTypes['Source']> = {
+export type SourceResolvers<ContextType = Context, ParentType extends ResolversParentTypes['Source'] = ResolversParentTypes['Source']> = {
   book?: Resolver<Maybe<ResolversTypes['Book']>, ParentType, ContextType>;
   pageNumber?: Resolver<Maybe<ResolversTypes['Int']>, ParentType, ContextType>;
   source_id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
-export type Resolvers<ContextType = any> = {
+export type Resolvers<ContextType = Context> = {
   Book?: BookResolvers<ContextType>;
   MutationResponse?: MutationResponseResolvers<ContextType>;
   Power?: PowerResolvers<ContextType>;
