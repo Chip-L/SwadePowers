@@ -1,11 +1,23 @@
 {
   "compilerOptions": {
-    "rootDir": "src",
-    "outDir": "dist",
+    "lib": ["ES2023"],
     "module": "NodeNext",
     "moduleResolution": "nodenext",
     "target": "ESNext",
-    "esModuleInterop": true
+
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "rootDir": "src",
+
+    "sourceMap": true,
+    "types": ["vitest/globals", "node"],
+    "outDir": "build"
   },
   "include": ["src"]
 }
