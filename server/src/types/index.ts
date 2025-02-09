@@ -1,2 +1,2 @@
-export * from "./__generated__/types";
+export * from "./__generated__";
 export * from "./PowerModel";
