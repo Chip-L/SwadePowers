@@ -1,0 +1,11 @@
+{
+  "name": "data-source-server",
+  "version": "1.0.0",
+  "description": "Server to serve data source files",
+  "main": "index.js",
+  "author": "chip long",
+  "license": "MIT",
+  "scripts": {
+    "serve": "node index.js"
+  }
+}

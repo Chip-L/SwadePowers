@@ -9,11 +9,12 @@
   "private": true,
   "workspaces": [
     "client",
+    "dataSourceServer",
     "server"
   ],
   "scripts": {
-    "install": "cd client && yarn && cd ../server && yarn",
-    "dev": "start cmd /k yarn dev:server && start cmd /k yarn dev:client",
+    "install": "cd client && yarn && cd dataSourceServer && yarn && cd ../server && yarn",
+    "dev": "start cmd /k yarn serve && start cmd /k yarn dev:server && && start cmd /k yarn dev:client",
     "dev:server": "cd server && yarn dev",
     "dev:client": "cd client && yarn dev",
     "test": "start cmd /k yarn test:server && start cmd /k yarn test:client",
