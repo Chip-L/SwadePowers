@@ -1,6 +1,7 @@
 import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from "@apollo/server/standalone";
-import { typeDefs, resolvers } from "./schemas";
+import { resolvers, typeDefs } from "./schemas";
+
 // import { resolvers } from "./resolvers";
 
 async function startApolloServer() {

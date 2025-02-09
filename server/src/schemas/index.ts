@@ -1,10 +1,9 @@
 import { readFileSync } from "fs";
 import gql from "graphql-tag";
 import path from "path";
-
 import { mergeTypeDefs } from "@graphql-tools/merge";
-import { powerResolvers, powersTypedef } from "./Powers";
 import { Resolvers } from "../types";
+import { powerResolvers, powersTypedef } from "./Powers";
 
 // const powers = readFileSync(path.resolve(__dirname, "./powers.graphql"), {
 //   encoding: "utf-8",
