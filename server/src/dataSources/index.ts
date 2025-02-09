@@ -1,2 +1,2 @@
-export * from "./powers";
-export * from "./powerModifiers";
+export * from "./powersAPI";
+export * from "./powerModifiersAPI";

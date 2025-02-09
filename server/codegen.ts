@@ -6,6 +6,7 @@ const config: CodegenConfig = {
     "./src/types/__generated__.ts": {
       plugins: ["typescript", "typescript-resolvers"],
       config: {
+        contextType: "./context#Context",
         mappers: {
           Power: "./PowerModel#PowerModel",
         },
