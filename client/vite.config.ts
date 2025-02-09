@@ -6,7 +6,7 @@ import react from "@vitejs/plugin-react";
 /// <reference types="vite/client"
 export default ({ mode }: { mode: string }) => {
   process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
-  console.log(mode);
+
   return defineConfig({
     plugins: [react(), tsconfigPaths()],
     server: { open: true },
