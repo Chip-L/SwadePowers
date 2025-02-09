@@ -1,0 +1,623 @@
+[
+  {
+    "description": "The power may affect more than one item for 1 additional Power Point each.",
+    "shortModifierName": "Additional Recipients",
+    "cost": "1",
+    "takeMultiple": true,
+    "isRequired": false,
+    "id": "1",
+    "name": "Additional Recipients (+1)"
+  },
+  {
+    "description": "The power may affect more than one target for 1 additional Power Point each.",
+    "shortModifierName": "Additional Recipients",
+    "cost": "1",
+    "takeMultiple": true,
+    "isRequired": false,
+    "id": "2",
+    "name": "Additional Recipients (+1)"
+  },
+  {
+    "description": "The power may affect more than one viewer for 1 additional Power Point each.",
+    "shortModifierName": "Additional Recipients",
+    "cost": "1",
+    "takeMultiple": true,
+    "isRequired": false,
+    "id": "3",
+    "name": "Additional Recipients (+1)"
+  },
+  {
+    "description": "The power may affect more than one target for 2 additional Power Points each.",
+    "shortModifierName": "Additional Recipients",
+    "cost": "2",
+    "takeMultiple": true,
+    "isRequired": false,
+    "id": "4",
+    "name": "Additional Recipients (+2)"
+  },
+  {
+    "description": "The power may affect more than one target for 3 additional Power Points each.",
+    "shortModifierName": "Additional Recipients",
+    "cost": "3",
+    "takeMultiple": true,
+    "isRequired": false,
+    "id": "5",
+    "name": "Additional Recipients (+3)"
+  },
+  {
+    "description": "A larger horde can be raised in a single casting by paying an additional 1 Power Point for each extra zombie<i></i> raised.",
+    "shortModifierName": "Additional Zombies",
+    "cost": "1",
+    "takeMultiple": true,
+    "isRequired": false,
+    "id": "6",
+    "name": "Additional Zombies (+1)"
+  },
+  {
+    "description": "The caster can focus the <i>blast</i> to a Small Blast Template for no extra cost.",
+    "shortModifierName": "Area Effect",
+    "cost": "0",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "7",
+    "name": "Area Effect (+0)"
+  },
+  {
+    "description": "<i>Havoc</i> affects a Large Blast Template.",
+    "shortModifierName": "Area Effect",
+    "cost": "1",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "8",
+    "name": "Area Effect (+1)"
+  },
+  {
+    "description": "The caster can focus the <i>blast</i> to a Large Blast Template for +1.",
+    "shortModifierName": "Area Effect",
+    "cost": "1",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "9",
+    "name": "Area Effect (+1)"
+  },
+  {
+    "description": "The power affects everything in a sphere the size of a Medium Blast Template..",
+    "shortModifierName": "Area Of Effect",
+    "cost": "1",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "10",
+    "name": "Area Of Effect (+1)"
+  },
+  {
+    "description": "For +2 points the power affects everyone in a Medium Blast Template.",
+    "shortModifierName": "Area Of Effect",
+    "cost": "2",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "11",
+    "name": "Area Of Effect (+2)"
+  },
+  {
+    "description": "The power affects everything in a sphere the size of a Large Blast Template.",
+    "shortModifierName": "Area Of Effect",
+    "cost": "2",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "12",
+    "name": "Area Of Effect (+2)"
+  },
+  {
+    "description": "For +3 points the area of effect is increased to a Large Blast Template.",
+    "shortModifierName": "Area Of Effect",
+    "cost": "3",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "13",
+    "name": "Area Of Effect (+3)"
+  },
+  {
+    "description": "The dead rise with a rusting weapon common to their setting and environment. Choose one:<br><ul><li>Hand Weapon: Str+d6.</li><li>Ranged Weapon: Range 12/24/48, Damage 2d6.</li></ul>",
+    "shortModifierName": "Armed",
+    "cost": "1",
+    "takeMultiple": true,
+    "isRequired": false,
+    "id": "14",
+    "name": "Armed (+1 Per Zombie)"
+  },
+  {
+    "description": "The horrors crawl from their grave wearing 2 points of Armor. This might be old chain mail, rusting plate, rotting bulletproof vests, etc.",
+    "shortModifierName": "Armor",
+    "cost": "1",
+    "takeMultiple": true,
+    "isRequired": false,
+    "id": "15",
+    "name": "Armor (+1 Per Zombie)"
+  },
+  {
+    "description": "The caster can now hear sounds and conversations as well.",
+    "shortModifierName": "Audible History",
+    "cost": "2",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "16",
+    "name": "Audible History (+2)"
+  },
+  {
+    "description": "Control a creature from tiny (-4) to large human size (1) or a small swarm.",
+    "shortModifierName": "Beast Friend-Size 1",
+    "cost": "1",
+    "takeMultiple": true,
+    "isRequired": true,
+    "id": "17",
+    "name": "Beast Friend-Size 1 (+1)"
+  },
+  {
+    "description": "Control a  size 2 creature or a medium swarm.",
+    "shortModifierName": "Beast Friend-Size 2",
+    "cost": "2",
+    "takeMultiple": true,
+    "isRequired": true,
+    "id": "18",
+    "name": "Beast Friend-Size 2 (+2)"
+  },
+  {
+    "description": "Control a size 3 creature or a large swarm.",
+    "shortModifierName": "Beast Friend-Size 3",
+    "cost": "3",
+    "takeMultiple": true,
+    "isRequired": true,
+    "id": "19",
+    "name": "Beast Friend-Size 3 (+3)"
+  },
+  {
+    "description": "Control a size 4 creature.",
+    "shortModifierName": "Beast Friend-Size 4",
+    "cost": "4",
+    "takeMultiple": true,
+    "isRequired": true,
+    "id": "20",
+    "name": "Beast Friend-Size 4 (+4)"
+  },
+  {
+    "description": "Control a size 5 creature.<br>* for larger creatures, add sizes together to calculate the points",
+    "shortModifierName": "Beast Friend-Size 5",
+    "cost": "5",
+    "takeMultiple": true,
+    "isRequired": true,
+    "id": "21",
+    "name": "Beast Friend-Size 5 (+5)"
+  },
+  {
+    "description": "The ally can bite or claw at Str+d6.",
+    "shortModifierName": "Bite/Claw",
+    "cost": "1",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "22",
+    "name": "Bite/Claw (+1)"
+  },
+  {
+    "description": "The power can heal a permanent Crippling Injury (see <strong>Incapacitation</strong>, page 95). This requires an hour of preparation and only one casting is permitted per injury. If it fails, this caster cannot <i>heal</i> that particular injury (but someone else may try). If successful, the subject is Exhausted for 24 hours.",
+    "shortModifierName": "Crippling Injuries",
+    "cost": "2",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "23",
+    "name": "Crippling Injuries (+20)"
+  },
+  {
+    "description": "The <i>barrier</i> causes 2d4 damage to anyone who contacts it.",
+    "shortModifierName": "Damage",
+    "cost": "1",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "24",
+    "name": "Damage (+1)"
+  },
+  {
+    "description": "The <i>blast</i> causes 3d6 damage (4d6 with a raise).",
+    "shortModifierName": "Damage",
+    "cost": "2",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "25",
+    "name": "Damage (+2)"
+  },
+  {
+    "description": "The <i>bolt</i> causes 3d6 damage (4d6 with a raise).",
+    "shortModifierName": "Damage",
+    "cost": "2",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "26",
+    "name": "Damage (+2)"
+  },
+  {
+    "description": "The <i>burst</i> causes 3d6 damage, or 4d6 with a raise.",
+    "shortModifierName": "Damage",
+    "cost": "2",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "27",
+    "name": "Damage (+2)"
+  },
+  {
+    "description": "The <i>damage field</i> causes 2d6 damage.",
+    "shortModifierName": "Damage",
+    "cost": "2",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "28",
+    "name": "Damage (+2)"
+  },
+  {
+    "description": "Instead of wiping the memory, the caster edits it as they see fit.",
+    "shortModifierName": "Edit",
+    "cost": "1",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "29",
+    "name": "Edit (+1)"
+  },
+  {
+    "description": "The caster can wipe a memory as an action.",
+    "shortModifierName": "Fast Cast",
+    "cost": "2",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "30",
+    "name": "Fast Cast (+2)"
+  },
+  {
+    "description": "The ally can fly at Pace 12.",
+    "shortModifierName": "Flight",
+    "cost": "2",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "31",
+    "name": "Flight (+2)"
+  },
+  {
+    "description": "<i>Greater healing</i> can restore any Wound, including those more than an hour old.",
+    "shortModifierName": "Greater Healing",
+    "cost": "1",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "32",
+    "name": "Greater Healing (+10)"
+  },
+  {
+    "description": "Increase/Decrease size of target by 1",
+    "shortModifierName": "Growth/Shrink-Increment 1",
+    "cost": "2",
+    "takeMultiple": true,
+    "isRequired": true,
+    "id": "33",
+    "name": "Growth/Shrink-Increment 1 (+2)"
+  },
+  {
+    "description": "The wall is Hardness 12.",
+    "shortModifierName": "Hardened",
+    "cost": "1",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "34",
+    "name": "Hardened (+1)"
+  },
+  {
+    "description": "The caster can communicate and sense through any of the beasts he's befriended.",
+    "shortModifierName": "Mind Rider",
+    "cost": "1",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "35",
+    "name": "Mind Rider (+1)"
+  },
+  {
+    "description": "The caster can communicate and sense through one of the undead he's conjured. If it's destroyed, he may jump to any of the others currently under his control.",
+    "shortModifierName": "Mind Rider",
+    "cost": "1",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "36",
+    "name": "Mind Rider (+1)"
+  },
+  {
+    "description": "The caster can communicate and sense through the ally.",
+    "shortModifierName": "Mind Rider",
+    "cost": "1",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "37",
+    "name": "Mind Rider (+1)"
+  },
+  {
+    "description": "The caster can move the area of effect up to his arcane skill die type each round after casting, or attach it to an inanimate object when first cast.",
+    "shortModifierName": "Mobile",
+    "cost": "1",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "38",
+    "name": "Mobile (+1)"
+  },
+  {
+    "description": "The caster can move the area of effect up to his arcane skill die type each round.",
+    "shortModifierName": "Mobile",
+    "cost": "1",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "39",
+    "name": "Mobile (+1)"
+  },
+  {
+    "description": "Success grants 4 points of Armor (+6 with a raise).",
+    "shortModifierName": "More Armor",
+    "cost": "1",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "40",
+    "name": "More Armor (+1)"
+  },
+  {
+    "description": "A successful <i>healing</i> roll negates any poison or disease. If the poison or disease has a bonus or penalty associated with it, the modifier applies to the arcane skill roll as well.",
+    "shortModifierName": "Neutralize Poison Or Disease",
+    "cost": "1",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "41",
+    "name": "Neutralize Poison Or Disease (+1)"
+  },
+  {
+    "description": "The <i>zombie</i> is given unlife until Incapacitated by Wounds. The Power Points used to raise it are &quot;invested&quot; and unavailable until it's destroyed. The necromancer may terminate his creations' unlife at any time, regardless of sight, distance, or other factors. His Power Points then begin recharging normally.<br>Permanent zombies remain animated even if their creator is slain!",
+    "shortModifierName": "Permanent",
+    "cost": "0",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "42",
+    "name": "Permanent (+0)"
+  },
+  {
+    "description": "For +1 Power Points, <i>dispel</i> can disrupt enchanted devices for one round, or two with a raise. The difficulty to do so is -2 for permanently enchanted items such as found in most swords & sorcery campaigns, or -4 for divine or legendary relics.",
+    "shortModifierName": "Power",
+    "cost": "1",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "43",
+    "name": "Power (+1)"
+  },
+  {
+    "description": "The caster can <i>burrow</i> through stone, concrete, or similar substances. (Some substances, like plastic, glass, solid lead, etc., might be resistant at the GM's discretion.)",
+    "shortModifierName": "Power",
+    "cost": "1",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "44",
+    "name": "Power (+1)"
+  },
+  {
+    "description": "The hero can raise a spirit dead up to a decade for +5 Power Points.",
+    "shortModifierName": "Power",
+    "cost": "5",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "45",
+    "name": "Power (+5)"
+  },
+  {
+    "description": "<i>Speed</i> only. The character's total Multi-Action penalty each turn is reduced by 2 (The recipient can do two actions at no penalty or three at -2 each).",
+    "shortModifierName": "Quickness",
+    "cost": "2",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "46",
+    "name": "Quickness (+2)"
+  },
+  {
+    "description": "Size -4 to Size -1",
+    "shortModifierName": "Shape Change-Novice",
+    "cost": "3",
+    "takeMultiple": false,
+    "isRequired": true,
+    "id": "47",
+    "name": "Shape Change-Novice (+3)"
+  },
+  {
+    "description": "Size 0",
+    "shortModifierName": "Shape Change-Seasoned",
+    "cost": "5",
+    "takeMultiple": false,
+    "isRequired": true,
+    "id": "48",
+    "name": "Shape Change-Seasoned (+5)"
+  },
+  {
+    "description": "Size +1 to +2",
+    "shortModifierName": "Shape Change-Veteran",
+    "cost": "8",
+    "takeMultiple": false,
+    "isRequired": true,
+    "id": "49",
+    "name": "Shape Change-Veteran (+8)"
+  },
+  {
+    "description": "Size +3 to +4",
+    "shortModifierName": "Shape Change-Heroic",
+    "cost": "1",
+    "takeMultiple": false,
+    "isRequired": true,
+    "id": "50",
+    "name": "Shape Change-Heroic (+11)"
+  },
+  {
+    "description": "Size +5 to +10",
+    "shortModifierName": "Shape Change-Legendary",
+    "cost": "1",
+    "takeMultiple": false,
+    "isRequired": true,
+    "id": "51",
+    "name": "Shape Change-Legendary (+15)"
+  },
+  {
+    "description": "The <i>barrier</i> forms a circle, square or other basic shape.",
+    "shortModifierName": "Shaped",
+    "cost": "2",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "52",
+    "name": "Shaped (+2)"
+  },
+  {
+    "description": "The length and height of the <i>barrier</i> doubles.",
+    "shortModifierName": "Size",
+    "cost": "1",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "53",
+    "name": "Size (+1)"
+  },
+  {
+    "description": "The recipient may assume the shape of someone up to two Sizes larger or smaller than themselves.",
+    "shortModifierName": "Size",
+    "cost": "1",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "54",
+    "name": "Size (+1)"
+  },
+  {
+    "description": "The power generates sound appropriate to the <i>illusion</i>. Illusionary allies may talk, illusionary crows caw, and so on. It may not mask or mute existing sound, however.",
+    "shortModifierName": "Sound",
+    "cost": "1",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "55",
+    "name": "Sound (+1)"
+  },
+  {
+    "description": "The recipient retains the power of speech (but still cannot activate powers).",
+    "shortModifierName": "Speech",
+    "cost": "1",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "56",
+    "name": "Speech (+1)"
+  },
+  {
+    "description": "<i>Detection</i> rolls to see through the <i>concealment</i> are made at -2.",
+    "shortModifierName": "Strong",
+    "cost": "1",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "57",
+    "name": "Strong (+1)"
+  },
+  {
+    "description": "Strength rolls are made at -2.",
+    "shortModifierName": "Strong",
+    "cost": "1",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "58",
+    "name": "Strong (+1)"
+  },
+  {
+    "description": "The Spirit roll to shake off the effect is made at -2.",
+    "shortModifierName": "Strong",
+    "cost": "1",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "59",
+    "name": "Strong (+1)"
+  },
+  {
+    "description": "The Vigor roll to shake off the effect is made at -2.",
+    "shortModifierName": "Strong",
+    "cost": "1",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "60",
+    "name": "Strong (+1)"
+  },
+  {
+    "description": "Smarts rolls to disbelieve the <i>illusion</i> are made at -2.",
+    "shortModifierName": "Strong",
+    "cost": "2",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "61",
+    "name": "Strong (+2)"
+  },
+  {
+    "description": "The <i>entangling</i> material is particularly resilient. Rolls to break free are made at -2 and its Hardness increases to 7.",
+    "shortModifierName": "Strong",
+    "cost": "2",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "62",
+    "name": "Strong (+2)"
+  },
+  {
+    "description": "<i><strong>Attendant</strong></i><br><strong>Attributes:</strong> Agility d4, Smarts d4, Spirit d4, Strength d4, Vigor d4<br><strong>Skills:</strong> Athletics d4, Fighting d4, Notice d4, Shooting d4, Stealth d6<br><strong>Pace:</strong> 4; <strong>Parry:</strong> 4; <strong>Toughness: </strong>4<br><strong>Special Abilities:</strong><br><ul><li><strong>Claw: </strong>Str+d4.</li><li><strong>Construct:</strong> +2 to recover from being Shaken; ignore 1 point of Wound penalties; doesn't breathe, immune to poison and disease.</li><li><strong>Fearless:</strong> Immune to fear and Intimidation.</li></ul>",
+    "shortModifierName": "Summon Ally-Novice",
+    "cost": "2",
+    "takeMultiple": false,
+    "isRequired": true,
+    "id": "63",
+    "name": "Summon Ally-Novice (+2)"
+  },
+  {
+    "description": "<i><strong>Bodyguard</strong></i><br><strong>Attributes: </strong>Agility d6, Smarts d4, Spirit d6, Strength d6, Vigor d6<br><strong>Skills: </strong>Athletics d6, Fighting d6, Intimidation d6, Notice d4, Shooting d4, Stealth d4<br><strong>Pace: </strong>6; <strong>Parry: </strong>5; <strong>Toughness:</strong> 7 (2)<br><strong>Edges: </strong>First Strike<br><strong>Gear: </strong>Melee attack (Str+d6).<br><strong>Special Abilities:</strong><br><ul><li><strong>Armor +2: </strong>Hardened skin. </li><li><strong>Construct: </strong>+2 to recover from being Shaken; ignore 1 point of Wound penalties; doesn't breathe, immune to poison and disease. </li><li><strong>Fearless:</strong> Immune to fear and Intimidation. </li></ul>",
+    "shortModifierName": "Summon Ally-Seasoned",
+    "cost": "4",
+    "takeMultiple": false,
+    "isRequired": true,
+    "id": "64",
+    "name": "Summon Ally-Seasoned (+4)"
+  },
+  {
+    "description": "<i><strong>Mirror Self<br></strong></i>The ally is a clone of the caster except: it's an Extra; it has the same number of current Power Points as the caster <i>after</i> subtracting for this casting; it cannot use the summon ally power; its skills (but not attributes) are one die type less (minimum d4) than the original; it has identical mundane equipment (no magical qualities, disappears when the power expires); has the Construct and Fearless abilities.<br><i>Mirror Self costs +2 power points per Rank above Veteran to a maximum of 10 PPs at Legendary.</i>",
+    "shortModifierName": "Summon Ally-Veteran",
+    "cost": "6",
+    "takeMultiple": false,
+    "isRequired": true,
+    "id": "65",
+    "name": "Summon Ally-Veteran (+6)"
+  },
+  {
+    "description": "<i><strong>Sentinel</strong></i><br><strong>Attributes: </strong>Agility d6, Smarts d6, Spirit d8, Strength d12+2, Vigor d10<br><strong>Skills: </strong>Athletics d6, Fighting d10, Intimidation d10, Notice d8<br><strong>Pace: </strong>6; <strong>Parry: </strong>7; <strong>Toughness: </strong>13 (4)<br><strong>Edges: </strong>Arcane Resistance, Sweep (Imp).<br><strong>Gear: </strong>Melee attack (Str+d8).<br><strong>Special Abilities:<br><ul><li></strong>' <strong>Armor +4: </strong>Stone skin.</li><li><strong>Construct: </strong>+2 to recover from being Shaken; ignore 1 point of Wound penalties; doesn't breathe, immune to poison and disease. </li><li><strong>Fearless: </strong>Immune to fear and Intimidation. </li><li><strong>Size 2: </strong>Sentinels are 8' tall and very dense. </li></ul>",
+    "shortModifierName": "Summon Ally-Heroic",
+    "cost": "8",
+    "takeMultiple": false,
+    "isRequired": true,
+    "id": "66",
+    "name": "Summon Ally-Heroic (+8)"
+  },
+  {
+    "description": "Instead of casting <i>silence</i> in an area of effect, the caster may instead target individuals in Range for 1 Power Point each. Unwilling targets resist with Spirit (at -2 if the caster gets a raise).",
+    "shortModifierName": "Targeted",
+    "cost": "0",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "67",
+    "name": "Targeted (+0)"
+  },
+  {
+    "description": "Foes may be targeted by a <strong>Touch </strong>attack (page 108). This is an action, so the casting must be the second part of a Multi-Action if the attack is successful. The foe resists the casting with an opposed Spirit roll against the arcane skill total and is sent up to 12\" away with success and 24\" with a raise. Foes may not be teleported into solid objects.",
+    "shortModifierName": "Teleport Foe",
+    "cost": "2",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "68",
+    "name": "Teleport Foe (+2)"
+  },
+  {
+    "description": "<i>Protection</i> provides Toughness instead of Armor and is not affected by AP (magical or otherwise). This means it stacks with natural or worn armor.",
+    "shortModifierName": "Toughness",
+    "cost": "2",
+    "takeMultiple": false,
+    "isRequired": false,
+    "id": "69",
+    "name": "Toughness (+2)"
+  }
+]
