@@ -10,28 +10,28 @@
   "workspaces": [
     "client",
     "dataSourceServer",
-    "server"
+    "middleware"
   ],
   "scripts": {
-    "install": "cd client && yarn && cd dataSourceServer && yarn && cd ../server && yarn",
-    "dev": "start cmd /k yarn serve && start cmd /k yarn dev:server && && start cmd /k yarn dev:client",
+    "install": "cd client && yarn && cd ../dataSourceServer && yarn && cd ../middleware && yarn",
+    "dev": "start cmd /k yarn serve && start cmd /k yarn dev:mw && && start cmd /k yarn dev:client",
     "dev:data": "cd dataSourceServer && yarn serve",
-    "dev:server": "cd server && yarn dev",
+    "dev:mw": "cd middleware && yarn dev",
     "dev:client": "cd client && yarn dev",
-    "test": "start cmd /k yarn test:server && start cmd /k yarn test:client",
+    "test": "start cmd /k yarn test:mw && start cmd /k yarn test:client",
     "test:client": "cd client && yarn test",
-    "test:server": "cd server && yarn test",
-    "build": "yarn build:server && yarn build:client",
+    "test:mw": "cd middleware && yarn test",
+    "build": "yarn build:mw && yarn build:client",
     "build:client": "cd client && yarn build",
-    "build:server": "cd server && yarn build",
-    "lint": "start cmd /k yarn lint:server && start cmd /k yarn lint:client",
+    "build:mw": "cd middleware && yarn build",
+    "lint": "start cmd /k yarn lint:mw && start cmd /k yarn lint:client",
     "lint:client": "cd client && yarn lint",
-    "lint:server": "cd server && yarn lint",
-    "stage": "start cmd /k yarn stage:server && start cmd /k yarn stage:client",
+    "lint:mw": "cd middleware && yarn lint",
+    "stage": "start cmd /k yarn stage:mw && start cmd /k yarn stage:client",
     "stage:client": "cd client && yarn stage",
-    "stage:server": "cd server && yarn stage",
-    "coverage": "start cmd /k yarn coverage:server && start cmd /k yarn coverage:client",
+    "stage:mw": "cd middleware && yarn stage",
+    "coverage": "start cmd /k yarn coverage:mw && start cmd /k yarn coverage:client",
     "coverage:client": "cd client && yarn coverage",
-    "coverage:server": "cd server && yarn coverage"
+    "coverage:mw": "cd middleware && yarn coverage"
   }
 }
