@@ -1,5 +1,5 @@
 {
-  "name": "data-source-server",
+  "name": "dataSourceServer",
   "version": "1.0.0",
   "description": "Server to serve data source files",
   "main": "index.js",
