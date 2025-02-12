@@ -1,8 +1,8 @@
-import log4jsPlugin from "./log4jsPlugin";
+import { log4jsPlugin } from "./log4jsPlugin";
 
 const mockShutdown = vi.hoisted(() => vi.fn());
 
-vi.mock("./logging", () => ({
+vi.mock("../logging/logging", () => ({
   shutdown: mockShutdown,
 }));
 

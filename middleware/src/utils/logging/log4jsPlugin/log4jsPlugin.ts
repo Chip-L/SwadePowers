@@ -10,4 +10,4 @@ const log4jsPlugin = {
   },
 };
 
-export default log4jsPlugin;
+export { log4jsPlugin };

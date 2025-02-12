@@ -8,18 +8,24 @@ import { PowerModifiersAPI, PowersAPI } from "../../dataSources/";
 import { resolvers, typeDefs } from "../../schemas";
 import { Context } from "../../types";
 import { getOptionalEnvVar } from "../env/env";
+import { createLogger, log4jsPlugin } from "../logging";
 
 const startApolloServer = async () => {
   const port = getOptionalEnvVar("API_PORT", "4000");
 
   const app = express();
   const httpServer = http.createServer(app);
+  const logger = createLogger();
 
   const server = new ApolloServer<Context>({
     typeDefs,
     resolvers,
     csrfPrevention: true,
-    plugins: [ApolloServerPluginDrainHttpServer({ httpServer })],
+    plugins: [ApolloServerPluginDrainHttpServer({ httpServer }), log4jsPlugin],
+    formatError: (formattedError, error) => {
+      logger.error(error);
+      return formattedError;
+    },
   });
 
   await server.start();
@@ -30,7 +36,9 @@ const startApolloServer = async () => {
 
   app.use(
     "/",
-    cors<cors.CorsRequest>(),
+    cors<cors.CorsRequest>({
+      origin: "*",
+    }),
     express.json(),
     expressMiddleware(server, {
       context: async () => {
@@ -46,7 +54,7 @@ const startApolloServer = async () => {
   );
 
   await new Promise<void>((resolve) => httpServer.listen(port, resolve));
-  console.log(`🚀 Server ready at http://localhost:${port}/`);
+  logger.info(`🚀 Server ready at http://localhost:${port}/`);
 
   return httpServer;
 };
