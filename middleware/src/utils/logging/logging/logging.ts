@@ -1,5 +1,5 @@
 import log4js from "log4js";
-import { getOptionalEnvVar } from "../env";
+import { getOptionalEnvVar } from "../../env";
 
 export type Logger = Omit<log4js.Logger, "log" | "_log">;
 

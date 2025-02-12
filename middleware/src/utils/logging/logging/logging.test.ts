@@ -1,4 +1,4 @@
-import * as env from "../env";
+import * as env from "../../env";
 import { createLogger } from "./logging";
 
 let isLog4jsConfigured = false;
