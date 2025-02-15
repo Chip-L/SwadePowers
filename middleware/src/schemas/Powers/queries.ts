@@ -5,7 +5,6 @@ export const query: QueryResolvers = {
     return await dataSources.powersAPI.getPowers();
   },
   getPower: async (_, { id }, { dataSources }) => {
-    console.log("getPower", id);
     return await dataSources.powersAPI.getPowerById(id);
   },
 };

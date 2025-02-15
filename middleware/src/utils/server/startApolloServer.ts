@@ -31,11 +31,12 @@ const startApolloServer = async () => {
   await server.start();
 
   app.get("/health", (_, res) => {
+    logger.info("Health check passed");
     res.status(200).json({ status: "ok" });
   });
 
   app.use(
-    "/",
+    "/apollo",
     cors<cors.CorsRequest>({
       origin: "*",
     }),

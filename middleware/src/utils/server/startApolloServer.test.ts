@@ -39,7 +39,7 @@ describe("Server", () => {
 
   it("should set up Apollo Server correctly", async () => {
     const response = await request(httpServer)
-      .post("/")
+      .post("/apollo")
       .send({
         query: `
           query {
@@ -57,7 +57,7 @@ describe("Server", () => {
 
   it("returns a formatted error", async () => {
     const response = await request(httpServer)
-      .post("/")
+      .post("/apollo")
       .send({
         query: `
           query {

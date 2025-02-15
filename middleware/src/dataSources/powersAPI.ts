@@ -8,10 +8,6 @@ export class PowersAPI extends RESTDataSource {
   baseURL: string = BASE_URL;
 
   async getPowers() {
-    console.log("getPowers", {
-      baseURL: this.baseURL,
-      fullURL: this.baseURL + "powers",
-    });
     return this.get("powers");
   }
 
