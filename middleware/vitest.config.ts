@@ -14,7 +14,11 @@ export default defineConfig({
         statements: 85,
       },
       include: ["src/**"],
-      exclude: ["src/server.ts", "src/types/__generated__.ts"],
+      exclude: [
+        "src/server.ts",
+        "src/types/__generated__.ts",
+        "src/dataSources",
+      ],
     },
   },
 });

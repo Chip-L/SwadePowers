@@ -1,4 +1,4 @@
-"# Savage Worlds Adventurer Edition Dynamic Lookup app
+# Savage Worlds Adventurer Edition Dynamic Lookup app
 
 ## Description
 
@@ -18,6 +18,10 @@ This app will just supply some quick lookup stuff for the spells, skills, and ed
 Dependencies are locked with a `yarn.lock` file, so please use `yarn` instead of `npm` to install them.
 
 `yarn install`
+
+After installing you can do a yarn dev and it will start all of the servers.
+
+To ensure the middleware is working you can do http://localhost:4000/health to check its status.
 
 ## Usage
 
@@ -41,6 +45,7 @@ These are only run in each workspace:
 - Vite
 - Vitest
 - Apollo Server
+- Express
 - CodeGen -- manages types between BE and FE
 
 ## Credits
@@ -67,9 +72,13 @@ We expect a coverage of:
 - Filter by book
 - Add actions
 
-## Deploy on Vercel
+## Deploy on Vercel?
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 The easiest way to deploy your app is to use the Vercel Platform.
+
+## Notes
+
+The server is a little more complex than it probably needs to be. This was done in order to figure out how to test the server configurations we use at work. Mixing the Apollo Server with Express lets us use the HTTP methods outside of GraphQL.

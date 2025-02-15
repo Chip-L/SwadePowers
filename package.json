@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "install": "cd client && yarn && cd ../dataSourceServer && yarn && cd ../middleware && yarn",
-    "dev": "start cmd /k yarn serve && start cmd /k yarn dev:mw && && start cmd /k yarn dev:client",
+    "dev": "start cmd /k yarn dev:data && start cmd /k yarn dev:mw && start cmd /k yarn dev:client",
     "dev:data": "cd dataSourceServer && yarn serve",
     "dev:mw": "cd middleware && yarn dev",
     "dev:client": "cd client && yarn dev",
